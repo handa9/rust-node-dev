@@ -1,4 +1,4 @@
-FROM rust:1.61.0
+FROM rust:1.62
 RUN cargo install cargo-watch
 RUN cargo install sqlx-cli
 RUN rustup component add rustfmt
