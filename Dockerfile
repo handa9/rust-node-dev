@@ -3,7 +3,7 @@ RUN cargo install cargo-watch
 RUN cargo install sqlx-cli
 RUN rustup component add rustfmt
 RUN apt-get update
-RUN apt-get install -y build-essential git clang cmake libstdc++-10-dev libssl-dev libxxhash-dev zlib1g-dev pkg-config
+RUN apt-get install -y build-essential git clang cmake libstdc++-10-dev libssl-dev libxxhash-dev zlib1g-dev pkg-config graphviz
 RUN git clone https://github.com/rui314/mold.git && \
     cd mold && \
     git checkout v1.0.3 && \
